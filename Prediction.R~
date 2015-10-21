@@ -165,7 +165,7 @@ for(i in 1:30){
   
 }
 
-
+#png("/home/gappert/Bridge/boston.png",height=662, width=935)
 pdf("bostonPred.pdf",width = 11)
 boxplot(unlist(List.Linear),unlist(List.ClassicalBridge),unlist(List.BayesianBridgeFix),unlist(List.BayesianBridge),unlist(List.Ridge),unlist(List.Lasso),
         names=c("OLS","Bridge(EM+GCV)","Bayes(a=0.5)","Bayes","Ridge(GCV)","Lasso(GCV)"),
@@ -305,7 +305,7 @@ for(i in 1:20){
   
 }
 
-
+#png("/home/gappert/Bridge/ozone.png",height=662, width=935)
 pdf("ozonePred.pdf",width = 11)
 boxplot(unlist(List.Linear),unlist(List.ClassicalBridge),unlist(List.BayesianBridgeFix),unlist(List.BayesianBridge),unlist(List.Ridge),unlist(List.Lasso),
         names=c("OLS","Bridge(EM+GCV)","Bayes(a=0.5)","Bayes","Ridge(GCV)","Lasso(GCV)"),
@@ -424,7 +424,7 @@ for(i in 1:10){
 
 
 
-
+#png("glucose.png",height=700, width=935)
 pdf("glucosePred.pdf",width = 11)
 boxplot(unlist(List.Linear),unlist(List.Ridge),unlist(List.Lasso),unlist(List.ClassicalBridge),unlist(List.BayesianBridgeFix),unlist(List.BayesianBridge),
         names=c("OLS","Ridge(GCV)","Lasso(GCV)","Bridge(EM+GCV)","Bayes(a=0.5)","Bayes"),col=c("red","paleturquoise4","yellow","blue","green","violet","orange"),ylab="SSE")
