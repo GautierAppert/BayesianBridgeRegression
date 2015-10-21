@@ -6,3 +6,6 @@ defined by the bridge model.
 The importance sampling method is based on the simulation of the parameters via an instrumental law that is easy to simulate using a fast and reliable simulator.
 The underlying idea is to see if we can get similar results as the Gibbs sampler with a reasonable calculation time
 using this much more direct method.
+The importance sampling method produces similar results in comparison with the method of Gibbs sampler
+on the article data sets.
+Specifically nonparametric estimation of marginal posterior densities of parameters according to the importance sampling method and Gibbs sampler coincides very strongly.
