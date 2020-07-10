@@ -1,4 +1,4 @@
-# BayesianBridgeRegression
+# Bayesian Bridge Regression
 
 * This repository contains R code to estimate the **Bridge regression in a Bayesian framework**,  using Monte Carlo methods. 
 Here, the Bayesian formulation can be viewed as a trick to overcome the computational difficulties 
