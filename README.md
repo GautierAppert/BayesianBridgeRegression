@@ -6,7 +6,7 @@ that arise from the constrained optimization problem defined by the Bridge model
 
 ## Importance Sampling
 
-Our proposal is to use **Importance Sampling** to estimate the parameters instead of using the Gibbs sampler proposed in [The Bayesian Bridge , 2014].
+* Our proposal is to use **Importance Sampling** to estimate the parameters instead of using the Gibbs sampler proposed in [The Bayesian Bridge , 2014].
 The idea is to see if we can achieve similar results as in [The Bayesian Bridge , 2014]  with a reasonable CPU-Time
 using this much more direct approach.
 
