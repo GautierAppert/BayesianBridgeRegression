@@ -1,13 +1,13 @@
 # BayesianBridgeRegression
-Bridge regression in a Bayesian framework,  using Monte Carlo methods in order to estimate the parameters. 
-Estimation of the Bayesian Bridge regression using importance sampling method and Gibbs sampler (article The Bayesian Bridge (2014)).
-Bayesian formulation can be an alternative against the constrained optimization problem
-defined by the bridge model.
-The importance sampling method is based on the simulation of the parameters via an instrumental law that is easy to simulate using a fast and reliable simulator.
-The underlying idea is to see if we can get similar results as the Gibbs sampler with a reasonable calculation time
+
+* This repository contains R code to estimate the **Bridge regression in a Bayesian framework**,  using Monte Carlo methods to estimate the parameters. 
+Here, the Bayesian formulation can be viewed as a trick to overcome the computational difficulties 
+that arise from the constrained optimization problem defined by the Bridge model.
+Our proposal is to use **Importance Sampling** to estimate the parameters instead of using the Gibbs sampler proposed in [The Bayesian Bridge , 2014].
+The idea is to see if we can achieve similar results as the Gibbs sampler with a reasonable calculation time
 using this much more direct method.
-The importance sampling method produces similar results in comparison with the method of Gibbs sampler
-on the article data sets.
-Specifically nonparametric estimation of marginal posterior densities of parameters according to the importance sampling method and Gibbs sampler coincides very strongly.
-We also apply the Sequential Monte Carlo method on the bayesian bridge model in the simplest case where all the hyperparameters are fixed and number of explanatory variables is relatively small (< 10).
-We observe that we obtain identical results of the estimates of the Gibbs sampler method using the Monte Carlo sequential algorithm.
+
+* The **importance sampling** method produces similar results as the **Gibbs sampler** on the same data set used in the article [The Bayesian Bridge , 2014].
+Nonparametric estimation of marginal posterior coming from the importance sampling method coincides very strongly with the Gibbs sampler.
+We also apply the Sequential Monte Carlo method on the bayesian bridge model in the simplest case where all the hyperparameters are fixed
+and number of explanatory variables is relatively small (less that 10). We also obtain identical results with respect to the Gibbs sampler.
